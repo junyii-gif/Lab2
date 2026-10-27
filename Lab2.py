@@ -19,10 +19,10 @@ def calc_median_temperature(num_list):
     sorted_list = sorted(num_list)
     n =len(sorted_list)
     mid = n//2
-    if n % 2 == 1:
+    if n % 2 == 1: #If Odd = middle index
         return sorted_list[mid]
     else:
-        return (sorted_list[mid-1] + sorted_list[mid])/2
+        return (sorted_list[mid-1] + sorted_list[mid])/2 #If n%2 == 0, It will take mid-1 index and middle divided by 2
 
 
 def main():
